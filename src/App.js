@@ -1,4 +1,5 @@
-import logo from './logo.svg';
+import logo from './assets/img_logo.svg';
+import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
 
 function App() {

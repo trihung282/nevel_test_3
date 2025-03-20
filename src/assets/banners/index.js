@@ -1,0 +1,1 @@
+const IMG_BANNER_1 = import("./img_banner_1.png");
