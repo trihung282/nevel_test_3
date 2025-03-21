@@ -1,0 +1,52 @@
+.header {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 12px;
+    background-color: var(--header-bg-color);
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.header-menu {
+    background: url("../../assets/icons/icon_menu.svg") center;
+    border: none;
+    width: 28px;
+    height: 28px;
+    margin-right: 8px;
+}
+
+.header-btn {
+    background-color: #12294A;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 14px;
+    border: none;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.header-btn_login {
+    width: 68px;
+    height: 34px;
+}
+
+.header-btn_register {
+    width: 121px;
+    height: 34px;
+    margin-left: 5px;
+    background-color: #01AF70;
+}
+
+@media only screen and (min-width: 992px) {
+    .header {
+        border-bottom: 0.8px solid #F5F9FF;
+    }
+}

@@ -1,0 +1,56 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: var(--footer-bg-color);
+    padding: 40px 16px;
+}
+
+.footer-content {
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.footer-social {
+    padding: 0 30px;
+    margin-bottom: 30px;
+}
+
+.footer-social_title {
+    margin: 22px 0 20px 0;
+}
+
+.footer-social_items {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.footer-help_center {
+    background: var(--content-bg-color);
+    padding: 24px 18px;
+    border-radius: var(--bg-border-radius);
+}
+
+.footer-help_center--get_answer {
+    background: #3555FF;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 10px;
+    width: 116px;
+    height: 34px;
+}
+
+.footer-divice_item {
+    padding: 6px;
+    background-color: var(--content-bg-color);
+    border-radius: var(--bg-border-radius);
+}
+
+@media only screen and (min-width: 769px) {
+    .footer {
+        padding: 60px 240px;
+
+    }
+}
