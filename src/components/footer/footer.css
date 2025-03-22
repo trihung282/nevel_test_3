@@ -42,15 +42,76 @@
     height: 34px;
 }
 
-.footer-divice_item {
-    padding: 6px;
+
+.footer-help_center--title:first-child {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.footer-help_center--title:nth-child(1) {
+    font-size: 15px;
+}
+
+.footer-device--item_wrapper {
+    margin: 0 -0.25rem
+}
+
+.footer-device_item {
+    padding: 6px 0;
     background-color: var(--content-bg-color);
     border-radius: var(--bg-border-radius);
+}
+
+.footer-device_item > span {
+    font-weight: var(--font-weight-bold);
 }
 
 @media only screen and (min-width: 769px) {
     .footer {
         padding: 60px 240px;
+        flex-direction: row;
+    }
 
+    .footer-content {
+        padding: 0 20px;
+        width: 20%;
+    }
+
+    .footer-help_center {
+        padding: 0;
+        background: none;
+
+    }
+
+    .footer-help_center > * {
+        width: 100%;
+    }
+
+    .footer-social {
+        padding: 0;
+    }
+
+    .footer-social_items {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .footer-device_item {
+        flex-direction: column;
+    }
+
+    .footer-device_item .content-wrapper {
+        text-align: center;
+    }
+
+    .footer-device_item > span {
+        font-weight: var(--font-weight-normal);
+    }
+
+    .footer-device-sub-item {
+        font-weight: var(--font-weight-bold);
+        background: var(--content-bg-color);
+        border-radius: var(--bg-border-radius);
+        padding: 8px;
     }
 }

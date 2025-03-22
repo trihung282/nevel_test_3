@@ -1,34 +1,38 @@
 :root {
-  --main-bg-color: #12294A;
-  --footer-bg-color: #12294A;
-  --header-bg-color: #03193A;
-  --content-bg-color: #1A3157;
-  --bg-border-radius: 10px;
+    --main-bg-color: #12294A;
+    --footer-bg-color: #12294A;
+    --header-bg-color: #03193A;
+    --content-bg-color: #1A3157;
+    --bg-border-radius: 10px;
 
-  --min-width-device: 992px;
+    --min-width-device: 992px;
 
-  --text-sub-content-color: #CAD3E1;
+    --text-sub-content-color: #CAD3E1;
+
+    --font-weight-normal: 400;
+    --font-weight-bold: 500;
 }
 
 .App {
-  color: white;
-  width: 100%;
+    color: white;
+    width: 100%;
 }
 
 .container {
-  max-width: 100%;
+    max-width: 100%;
 }
 
 .sub-content {
-  color: #90A2BD;
+    color: #90A2BD;
+    font-size: 15px;
 }
 
 .flex-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 button {
-  color: white;
+    color: white;
 }

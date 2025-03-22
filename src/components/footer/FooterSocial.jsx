@@ -3,7 +3,7 @@ import {footerSocials} from "./footer.data";
 
 const FooterSocial = ({...props}) => {
     return (
-        <div className='footer-social w-100 d-flex flex-column justify-content-center' style={props.style}>
+        <div className='footer-social w-100 d-flex flex-column justify-content-center'>
             <p className='footer-social_title text-center text-white'>
                 Follow Us
             </p>

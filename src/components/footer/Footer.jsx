@@ -1,5 +1,5 @@
 import React from 'react';
-import Dropdown from "../Dropdown/Dropdown";
+import Dropdown from "../dropdown/Dropdown";
 import {footerAbouts, footerGames, footerLegalInformations, footerSocials} from "./footer.data";
 import "./footer.css";
 import FooterSocial from "./FooterSocial";
@@ -33,7 +33,7 @@ const Footer = props => {
 
     const renderLabelDropdown = (item) => (<p className='sub-content'>{item}</p>)
 
-    const renderDropdown = (title, items, order)  => {
+    const renderDropdown = (title, items, order) => {
         console.log(title, order);
         if (isMobile) {
             return (
@@ -56,15 +56,17 @@ const Footer = props => {
             {renderDropdown('Games', footerGames, elementOrders["games"])}
             {renderDropdown('About', footerAbouts, elementOrders["about"])}
             {renderDropdown('Legal Information', footerLegalInformations, elementOrders["information"])}
-            <div className='footer-content' style={{order: elementOrders["information"]}}>
-                <Dropdown title={'Legal Information'} items={footerLegalInformations}
-                          renderChildren={renderLabelDropdown}/>
-            </div>
-            <FooterSocial style={{order: elementOrders["social"]}} />
+            {isMobile && <div className='footer-content' style={{order: elementOrders["social"]}}>
+                <FooterSocial style={{order: elementOrders["social"]}}/>
+            </div>}
             <div className='footer-content' style={{order: elementOrders["helpCenter"]}}>
                 <FooterHelpCenter/>
+
+                {!isMobile && <FooterSocial style={{order: elementOrders["social"]}}/>}
             </div>
-            <FooterDevice style={{order: elementOrders["device"]}}/>
+            <div className='footer-content' style={{order: elementOrders["device"]}}>
+                <FooterDevice style={{order: elementOrders["device"]}}/>
+            </div>
 
         </div>
     );
