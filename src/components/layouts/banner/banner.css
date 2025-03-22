@@ -1,0 +1,18 @@
+.carousel-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*.carousel-slide {*/
+/*    width: 200px; !* You can adjust this value *!*/
+/*    padding: 20px;*/
+/*    text-align: center;*/
+/*    background-color: #f0f0f0;*/
+/*    border: 1px solid #ccc;*/
+/*    transition: transform 0.5s ease;*/
+/*}*/
+
+/*.carousel-item.active .carousel-slide {*/
+/*    transform: scale(1.1); !* Makes the active slide slightly bigger *!*/
+/*}*/

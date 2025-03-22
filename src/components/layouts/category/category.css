@@ -1,0 +1,20 @@
+.category {
+
+}
+
+.category-item {
+    width: 191px;
+    height: 57px;
+    border: 1px solid #FFFFFF1A;
+    border-radius: var(--bg-border-radius);
+    margin: 0 8px;
+    background: none;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.category-item.active {
+    background: var(--content-bg-color);
+}
